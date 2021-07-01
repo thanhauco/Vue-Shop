@@ -1,0 +1,11 @@
+{
+  "common": {
+    "welcome": "Bienvenue à Nebula Shop",
+    "search": "Rechercher des produits...",
+    "cart": "Panier"
+  },
+  "auth": {
+    "login": "Connexion",
+    "register": "S'inscrire"
+  }
+}
