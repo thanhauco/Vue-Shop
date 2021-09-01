@@ -10,40 +10,85 @@ A **premium e-commerce application** built with Vue 3, featuring a dark "Nebula"
 ## 🌟 Features
 
 ### E-commerce
+
 - 🛒 **Shopping Cart** with real-time updates
 - 📦 **Product Catalog** with filtering & search
 - 💳 **Multi-step Checkout** with form validation
 - ❤️ **Wishlist** management
 
 ### Admin Dashboard
+
 - 📊 **Analytics** with charts and insights
 - 📝 **Product Management** (CRUD)
 - 📋 **Order Processing** with status tracking
 - 👥 **Customer Management**
 
 ### Marketing Tools
+
 - 🎟️ **Coupon System** with discount codes
 - 🖼️ **Banner Editor** for promotions
 - 📧 **Campaign Builder** for email marketing
 - ⭐ **Loyalty Program** with points system
 
 ### Integrations
+
 - 💰 **Payment Gateway** configuration
 - 🚚 **Shipping Providers** setup
 - 🔗 **Webhook Manager** for events
 - 🔐 **Social Login** (OAuth)
 
 ### UI Kit (50+ Components)
+
 - Atomic Design components (Button, Input, Modal, etc.)
 - Advanced components (DataTable, RichTextEditor, Gallery)
 - 40+ Custom SVG icons
 - Tooltips, Popovers, and more
 
 ### PWA Ready
+
 - 📱 **Mobile Navigation**
 - 📴 **Offline Support**
 - 📲 **Install Prompt**
 - 👆 **Touch Gestures**
+
+## 📐 Architecture
+
+### System Overview
+
+```mermaid
+graph TD
+    User[User] -->|Interacts| App[Vue Application]
+    App -->|Routing| Router[Vue Router]
+    Router -->|Loads| Layouts[Layouts]
+    Layouts -->|Contains| Views[Views/Pages]
+    Views -->|Uses| Components[UI Components]
+    Views -->|Uses| Features[Feature Modules]
+    Features -->|State| Pinia[Pinia Stores]
+    Features -->|Data| Services[API Services]
+    Services -->|Mock| MockAPI[Mock Data/API]
+```
+
+### Feature Modules
+
+```mermaid
+graph LR
+    subgraph Core
+        Auth[Auth Module]
+        UI[UI Kit]
+        Utils[Utilities]
+    end
+
+    subgraph Features
+        Products[Products] --> UI
+        Cart[Cart] --> Products
+        Cart --> Auth
+        User[User Portal] --> Auth
+        Admin[Admin Dashboard] --> Products
+        Admin --> User
+        Admin --> Analytics
+        Growth[Growth/Marketing] --> Admin
+    end
+```
 
 ## 🚀 Quick Start
 
@@ -90,6 +135,7 @@ src/
 ## 🎨 Design System
 
 Built with a custom **Nebula** theme featuring:
+
 - Dark mode by default
 - Custom CSS variables for theming
 - Premium typography (Inter + Manrope)
@@ -98,14 +144,14 @@ Built with a custom **Nebula** theme featuring:
 
 ## 🛠️ Tech Stack
 
-| Category | Technology |
-|----------|------------|
-| Framework | Vue 3 (Composition API) |
-| Build Tool | Vite 5 |
-| State | Pinia |
-| Routing | Vue Router 4 |
-| Testing | Vitest |
-| Styling | Vanilla CSS + CSS Variables |
+| Category     | Technology                     |
+| ------------ | ------------------------------ |
+| Framework    | Vue 3 (Composition API)        |
+| Build Tool   | Vite 5                         |
+| State        | Pinia                          |
+| Routing      | Vue Router 4                   |
+| Testing      | Vitest                         |
+| Styling      | Vanilla CSS + CSS Variables    |
 | Code Quality | ESLint + Prettier + TypeScript |
 
 ## 📦 Key Files
@@ -118,4 +164,3 @@ Built with a custom **Nebula** theme featuring:
 - **4 locale translations**
 
 ## 📄 License
-
