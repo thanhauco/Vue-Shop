@@ -90,6 +90,12 @@ graph LR
     end
 ```
 
+## 📸 Screenshots
+
+|                  Home Page                  |                Admin Dashboard                |                   Mobile App                    |
+| :-----------------------------------------: | :-------------------------------------------: | :---------------------------------------------: |
+| ![Home](public/images/screenshots/home.png) | ![Admin](public/images/screenshots/admin.png) | ![Mobile](public/images/screenshots/mobile.png) |
+
 ## 🚀 Quick Start
 
 ```bash
