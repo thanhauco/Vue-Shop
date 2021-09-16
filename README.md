@@ -96,6 +96,12 @@ graph LR
 | :-----------------------------------------: | :-------------------------------------------: | :---------------------------------------------: |
 | ![Home](public/images/screenshots/home.png) | ![Admin](public/images/screenshots/admin.png) | ![Mobile](public/images/screenshots/mobile.png) |
 
+### Desktop Views
+
+|                      Product Detail                       |                        Checkout Flow                        |
+| :-------------------------------------------------------: | :---------------------------------------------------------: |
+| ![Product](public/images/screenshots/product_desktop.png) | ![Checkout](public/images/screenshots/checkout_desktop.png) |
+
 ## 🚀 Quick Start
 
 ```bash
